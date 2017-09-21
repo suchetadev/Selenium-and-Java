@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Exercise test suite" parallel = "true">
+	<test name = "testFirefox" >
+	<parameter name = "driverName" value = "webdriver.gecko.driver"></parameter>
+	<parameter name = "driverLocation" value = "/home/sucheta/java/workspace/geckodriver"></parameter>
+	<parameter name = "driverType" value = "FireFoxDriver"></parameter>
+		<classes>
+			<class name = "testClasses.TestNG_ExerciseSec23"></class>
+		</classes>
+	</test>
+	
+	<test name = "testChrome" enabled = "false">
+	<parameter name = "driverName" value = "webdriver.chrome.driver"></parameter>
+	<parameter name = "driverLocation" value = "/home/sucheta/java/workspace/chromedriver"></parameter>
+	<parameter name = "driverType" value = "ChromeDriver"></parameter>
+		<classes>
+			<class name = "testClasses.TestNG_ExerciseSec23"></class>
+		</classes>
+	</test>
+
+</suite>

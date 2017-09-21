@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Exercise test suite]" parallel="methods">
+  <test name="testFirefox(failed)" parallel="methods">
+    <parameter name="driverLocation" value="/home/sucheta/java/workspace/geckodriver"/>
+    <parameter name="driverName" value="webdriver.geko.driver"/>
+    <parameter name="driverType" value="FireFoxDriver"/>
+    <classes>
+      <class name="testClasses.TestNG_ExerciseSec23">
+        <methods>
+          <include name="testMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testClasses.TestNG_ExerciseSec23 -->
+    </classes>
+  </test> <!-- testFirefox(failed) -->
+</suite> <!-- Failed suite [Exercise test suite] -->

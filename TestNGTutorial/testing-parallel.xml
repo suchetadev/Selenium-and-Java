@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Parallel test suite" parallel = "methods">
+	<test name = "test1">
+		<classes>
+		<class name = "testClasses.TestNG_TestParallel1"></class>
+		</classes>
+	</test>
+	
+	<test name = "test2">
+		<classes>
+		<class name = "testClasses.TestNG_TestParallel2"></class>
+		</classes>
+	</test>
+
+</suite>
